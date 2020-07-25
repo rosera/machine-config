@@ -1,4 +1,4 @@
-# Bash Configuration
+# Zsh Configuration
  
 Configure Zsh/Bash shell with user based themes to make the command line visually appealing.
 
@@ -28,18 +28,50 @@ Install the powerline fonts
 sudo apt-get install fonts-powerline
 ```
 
-## Oh My Bash
 
-Install oh-my-bash
+## Oh My ZSH
+
+Options: Select one of these 
+
+* Oh My ZSH
+
+* Install oh-my-zsh
+
+
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+sudo apt install zsh
 ```
 
-Add agnoster theme
+
+Check the version installed
+
 ```
-git clone https://github.com/agnoster/agnoster-zsh-theme.git ~/.oh-my-bash/custom/themes/agnoster
+zsh --version
 ```
 
+
+Install Oh My Zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+Update the configuration
+```
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+source ~/.zshrc
+```
+Add a theme - e.g. Agnoster
+
+```
+git clone https://github.com/agnoster/agnoster-zsh-theme.git ~/.oh-my-zsh/custom/themes/agnoster
+```
+
+Edit the zsh configuration file
+
+```
+vi ~/.zshrc
+```
 
 Make the following amendments in your configuration file - Amend the theme
 
@@ -48,8 +80,9 @@ Set name of the theme to load --- if set to "random", it will load a random them
 
 ```
 #echo $RANDOM_THEME
-#OSH_THEME="font"
-OSH_THEME="agnoster"
+#See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 Add any plugins that would be useful, for example
 
 
@@ -67,8 +100,6 @@ plugins=(
   tmux
 )
 ```
-
-
 
 ## Configure ChromeOS
 In the browser, open a terminal tab and press
@@ -91,9 +122,9 @@ Now select the custom-css (URI) entry and change the default “https://example.
 https://cdn.jsdelivr.net/gh/wernight/powerline-web-fonts@ba4426cb0c0b05eb6cb342c7719776a41e1f2114/PowerlineFonts.css
 ```
 
-Finally …
+## Finally …
 
-Open the a terminal window and press `CTRL-SHIFT and J` (to open a JavaScript window)  
+Open a terminal window and press `CTRL-SHIFT and J` (to open a JavaScript window)  
 
 __Note:__ this actually updates the fields available in the profile window - `CTRL-SHIFT-P`).
 
