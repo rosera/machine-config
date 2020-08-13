@@ -20,7 +20,7 @@ Configuration
 
 Update your machine
 ```
-sudo apt -y update && apt -y upgrade
+sudo apt -y update && sudo apt -y upgrade
 ```
 
 Install the powerline fonts
@@ -44,7 +44,7 @@ git clone https://github.com/agnoster/agnoster-zsh-theme.git ~/.oh-my-bash/custo
 Make the following amendments in your configuration file - Amend the theme
 
 
-Set name of the theme to load --- if set to "random", it will load a random theme each time oh-my-zsh is loaded, in which case, to know which specific one was loaded, run: 
+Set name of the `.bashrc` theme to load --- if set to "random", it will load a random theme each time oh-my-zsh is loaded, in which case, to know which specific one was loaded, run: 
 
 ```
 #echo $RANDOM_THEME
@@ -71,22 +71,28 @@ plugins=(
 
 
 ## Configure ChromeOS
-In the browser, open a terminal tab and press
+1. In the browser, open a terminal tab and press
 ```
 CTRL-ALT-T
 ```
 
-From the terminal tab, alter the look/behaviour by pressing
+2. From the terminal tab, alter the look/behaviour by pressing
 ```
 CTRL-SHIFT-P
 ```
 
-Find the appearance settings, then go to the font-family and enter your new font option (list of fonts is available here) e.g.
+3. Find the appearance settings, then go to the font-family and enter your new font option (list of fonts is available here) e.g.
 
 * "Liberation Mono", monospace
 
 
-Now select the custom-css (URI) entry and change the default “https://example.com/some/file” contents to the following:
+4. Now select the custom-css (URI) entry and change the default “https://example.com/some/file” contents to the following:
 ```
 https://cdn.jsdelivr.net/gh/wernight/powerline-web-fonts@ba4426cb0c0b05eb6cb342c7719776a41e1f2114/PowerlineFonts.css
 ```
+
+5. Exit the appearance setting screen
+6. Exit the Crosh browser tab
+7. Restart the Terminal window 
+
+On Restart of the terminal will be using the updated font selection and theme!
