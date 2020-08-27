@@ -26,15 +26,11 @@ curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 ```
 
 
-It may be necessary to install additional packages 
+Dependencies: It may be necessary to install additional packages 
 ```
-sudo apt install -y build-essential
+sudo apt install -y build-essential libssl-dev
 ```
 
-Dependencies: 
-```
-sudo apt-get install libssl-dev
-```
 
 ## Test Installation
 
