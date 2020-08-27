@@ -70,7 +70,17 @@ plugins=(
 
 
 
-## Configure ChromeOS
+
+## Configure ChromeOS 
+
+#### ChromeOS Post v84.4147.136
+1. Exit the Crosh browser tab
+2. Restart the Terminal window 
+
+On Restart of the terminal will be using the updated font selection and theme!
+
+
+#### ChromeOS - pre v84.4147.136
 1. In the browser, open a terminal tab and press
 ```
 CTRL-ALT-T
