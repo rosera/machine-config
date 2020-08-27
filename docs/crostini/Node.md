@@ -28,7 +28,7 @@ curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 
 It may be necessary to install additional packages 
 ```
-apt install build-essential
+sudo apt install -y build-essential
 ```
 
 Dependencies: 
