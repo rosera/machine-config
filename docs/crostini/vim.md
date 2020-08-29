@@ -8,6 +8,14 @@ This is a really quick guide to configuring Vim
 
 1. Install Packages
 
+
+Get rid of python 2.x
+
+```
+sudo apt autoremove python
+```
+
+Add build packages
 ```
 sudo apt install libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 liblua5.1-0-dev libperl-dev git
 ```
@@ -18,6 +26,8 @@ cd ~
 ```
 
 Ref: [VIM](https://www.vim.org/git.php)
+
+
 
 3. Get VIM from github
 ```
