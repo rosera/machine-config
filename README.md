@@ -2,22 +2,23 @@
 Config files for Linux environment
 
 ChromeOS
-* Keep
-* Mado
-* Connection Forwarder
-* Polarr Photo Editor
-* Pixlr Photo Editor
+- [x] Keep
+- [x] Mado
+- [ ] Connection Forwarder
+- [x] Polarr Photo Editor
+- [ ] Pixlr Photo Editor
+- [ ] Postman
 
 Linux Apps
-* Docker
-* Inkscape
-* Tmux
-* Vim
-* Node
-* pass
-* gpg
-* ytdl
-* jq
+- [x] Docker
+- [ ]  Inkscape
+- [x] Tmux
+- [x] Vim
+- [x] Node
+- [x] pass
+- [x] gpg
+- [ ] ytdl
+- [ ] jq
 
 
 ## OH MY BASH
@@ -33,10 +34,10 @@ The status line will look like the image below:
 
 ### To Install
 
-Basic TMUX configuration, copy the following files to ~
+Basic TMUX configuration, copy these  files to `~/`
 
-* .tmux-conf
-* tmux-scripts/
+- [x] .tmux-conf
+- [x] .tmux-scripts/
 
 ### Key Remapping
 TBC
@@ -45,12 +46,14 @@ TBC
 ## VIM
 
 The configuration will be similar to below:
+__NOTE:__ I tend to place `NerdTree` on the righthand side rather than the left!
 ![vim interface](https://github.com/rosera/machine-config/blob/master/images/vim-interface.png "Vim config")
 
 ### Vim or Neovim
 
-* Build Vim with support for Python3
-* Install Neovim - sudo apt-get install neovim
+- [x] Build Vim with support for Python3 (v3.5.1+)
+- [x] Remove old Python 2.x
+- [ ] Install Neovim - sudo apt-get install neovim
 
 Add an alias to replace vim
 
