@@ -4,6 +4,8 @@ This is a really quick guide to configuring Vim
 
 ## Build from Source
 
+[Reference:](https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source)
+
 1. Install Packages
 
 ```
