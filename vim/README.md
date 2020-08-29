@@ -8,6 +8,19 @@ A quick guide to install vim based on this configuration:
 
 * Run curl command to install vim-plug
 * Create a undodir `mkdir -p ~/.vim/undodir`
+* Open Vim
+```
+PlugInstall
+```
+
+## YouCompleteMe
+
+* YouCompleteMe needs Vim with Python3 support 3.5.1+
+* YouCompleteMe - also need to run the 
+
+```
+python3 install.py
+```
 
 ## Plugin
 
@@ -37,11 +50,8 @@ File uses the following plugins:
 * Plugin 'fatih/vim-go'
 * Plugin 'pangloss/vim-javascript'
 
-## Vim
 
-* YouCompleteMe needs Vim with Python3 support 3.5.1+
-* Install plugin `:PlugInstall`
-* YouCompleteMe - also need to run the `install.py`
+## Completed
 
 The vim config should look similar to image displayed below:
 
