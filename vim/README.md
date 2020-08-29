@@ -8,7 +8,7 @@ A quick guide to install vim based on this configuration:
 
 * Run curl command to install vim-plug
 * Create a undodir `mkdir -p ~/.vim/undodir`
-* Open Vim
+* Open Vim and enter the command:
 ```
 PlugInstall
 ```
@@ -18,6 +18,11 @@ PlugInstall
 * YouCompleteMe needs Vim with Python3 support 3.5.1+
 * YouCompleteMe - also need to run the 
 
+Move to the YouCompleteMe directory
+```
+cd ~/.vim/plugged/YouCompleteMe
+```
+Finish the install for YouCompleteMe
 ```
 python3 install.py
 ```
