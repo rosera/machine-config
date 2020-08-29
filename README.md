@@ -46,10 +46,15 @@ TBC
 ## VIM
 
 The configuration will be similar to below:
-__NOTE:__ I tend to place `NerdTree` on the righthand side rather than the left!
+
+
 ![vim interface](https://github.com/rosera/machine-config/blob/master/images/vim-interface.png "Vim config")
+__NOTE:__ I tend to place `NerdTree` on the righthand side rather than the left!
+
 
 ### Vim or Neovim
+
+I tend to build Vim from source rather than install.
 
 - [x] Build Vim with support for Python3 (v3.5.1+)
 - [x] Remove old Python 2.x
