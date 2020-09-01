@@ -14,13 +14,13 @@ gpg -k
 ```
 
 ## Exchange Keys
-2. Export a public key
+1. Export a public key
 
 ```
 gpg --export [username] > my-public-key.gpg
 ```
 
-3. Import a Public key
+2. Import a Public key
 ```
  gpg --import my-public-key.gpg
  ```
