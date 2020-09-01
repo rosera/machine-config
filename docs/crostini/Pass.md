@@ -41,7 +41,7 @@ git config --global user.email “github email address”
 sudo apt install -y pass
 ```
 
-2. Initialise the password-store
+2. Initialise the password-store (use the email address associated with the gpg key i.e. `gpg -k`)
 ```
 pass init [email address]
 ```
