@@ -1,16 +1,12 @@
 # Pass Installation
 
-## Configuration
+## GPG Configuration
 
 [password store](https://www.passwordstore.org/)
 [definitive guide to password](https://medium.com/@chasinglogic/the-definitive-guide-to-password-store-c337a8f023a1)
 
-1. Install the package
-```
-sudo apt install pass
-```
 
-2. Generate a GPG key for the password
+1. Generate a GPG key for the password
 * Need to remember the password used for GPG as this will be used to access the password-store
 
 ```
@@ -22,43 +18,58 @@ Note use the following config:
 * Key Size (3072)
 * Key lifespan (0) i.e. does not expire
 
+## Git Configuration
 
-3. Initialise git
+1. Initialise git username
+
 
 ```
 git config --global user.name “github username”
+```
+
+2. Initialise git email address
+
+Set up the email address
+```
 git config --global user.email “github email address”
 ```
 
-4. Initialise the password-store
+## Pass Configuration
+
+1. Install the package
+```
+sudo apt install -y pass
+```
+
+2. Initialise the password-store
 ```
 pass init [email address]
 ```
 
-5. Initialise git repo for password-store
+3. Initialise git repo for password-store
 ```
 pass git init
 ```
 
-6.  Insert a password e.g. store a github token
+4.  Insert a password e.g. store a password token with the name github
 ```
 pass insert github
 ```
-When prompted for a password - add the secret to be stored
+__NOTE:__ When prompted for a password - add the password/secret to be stored
 
 ## General Usage
 
-7. Retrieve a secret from the command line
+1. Retrieve a secret from the command line
 ```
 pass github
 ```
 
-8. Retrieve a secret to the clipboard
+2. Retrieve a secret to the clipboard
 ```
 pass -c github
 ```
 
-9. Delete a secret
+3. Delete a secret
 ```
 pass rm github
 ```
@@ -66,13 +77,13 @@ pass rm github
 
 ## ChromeOS Clipboard
 
-10. Edit the bash file /usr/bin/pass
+1. Edit the bash file /usr/bin/pass
 On ChromeOS the clipboard wont allow xclip to copy content. 
 ```
 sudo vi /usr/bin/pass
 ```
 
-11. Rename the exisiting clip function to clip2()
+2. Rename the exisiting clip function to clip2()
 ```
 clip2() {
         # This base64 business is because bash cannot store binary data in a shell
@@ -102,7 +113,7 @@ clip2() {
 }
 ```
 
-12. Add the following code as a new clip function
+3. Add the following code as a new clip function
 ```
 clip() {
         # Ref: https://medium.com/free-code-camp/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b
@@ -124,7 +135,7 @@ clip() {
 }
 ```
 
-13. Quit Vi
+4. Quit Vi
 Press the Esc key. Then enter
 ```
 wqa
