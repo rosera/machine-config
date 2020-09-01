@@ -8,6 +8,11 @@
 gpg --full-generate-key
 ```
 
+2. List a key
+```
+gpg -k
+```
+
 ## Exchange Keys
 2. Export a public key
 
