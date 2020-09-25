@@ -22,6 +22,11 @@ PlugInstall
 * YouCompleteMe needs Vim with Python3 support 3.5.1+
 * YouCompleteMe - also need to run the 
 
+Install packages
+```
+sudo apt install cmake
+```
+
 Move to the YouCompleteMe directory
 ```
 cd ~/.vim/plugged/YouCompleteMe
