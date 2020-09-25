@@ -7,6 +7,10 @@ A quick guide to install vim based on this configuration:
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 * Run curl command to install vim-plug
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 * Create a undodir `mkdir -p ~/.vim/undodir`
 * Open Vim and enter the command:
 ```
