@@ -41,7 +41,7 @@ git clone https://github.com/agnoster/agnoster-zsh-theme.git ~/.oh-my-bash/custo
 ```
 
 
-Make the following amendments in your configuration file - Amend the theme
+Make the following amendments in your `.bashrc` configuration file and amend the theme to use Agnoster
 
 
 Set name of the `.bashrc` theme to load --- if set to "random", it will load a random theme each time oh-my-zsh is loaded, in which case, to know which specific one was loaded, run: 
