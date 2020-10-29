@@ -5,6 +5,8 @@
 
 Download the go package - Visit https://golang.org/dl/
 
+ChromeOS/Linux x86-64: goX.X.linux-amd64.tar.gz
+
 ```
 wget [go-version.tar.gz]
 ```
