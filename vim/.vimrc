@@ -16,6 +16,8 @@ set incsearch                                      " Incremental search
 set encoding=utf-8
 set spelllang=en_gb
 set spell
+set splitright                                     " vsplit right
+set splitbelow                                     " split below
 
 set colorcolumn=80                                 " Add a column bar
 highlight ColorColumn ctermbg=0 guibg=lightgrey
