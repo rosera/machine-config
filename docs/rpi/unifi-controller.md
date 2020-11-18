@@ -143,3 +143,7 @@ https://IP_ADDRESS:8443
 
 You can now config the Unfi Controller!
 
+Note: Google WIFI node block access - so put the Unifi Controller
+
+- [x] Switch 8 Port - Devices before WIFI
+- [x] Switch 24 Port - Devices after WIFI
