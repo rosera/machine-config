@@ -37,6 +37,36 @@ Use the Linux Host to reboot into the Android bootloader
 adb reboot bootloader
 ```
 
+Change to root
+```
+sudo su
+```
+
+Copy across the files to `/tmp`
+```
+adb push [local file] /[remote file]
+```
+
+* unlockbl.sh
+* tool_bin_arc
+
+The bootloader is now unlocked
+
+
+### Load TWRP
+
+```
+sudo fastboot boot twrp-3.2.1-0.z500m.img
+```
+
+Mount the system as __Read-Only__
+
+Connect to the Android device with adb shell
+```
+adb shell
+```
+
+
 ### [Install TWRP](https://forum.xda-developers.com/t/twrp-recovery-asus-zenpad-3s-10-z500m.3758333/)
 
 On the Linux Host
@@ -49,7 +79,8 @@ Reboot the Android device into fastboot
 adb reboot fastboot
 ```
 
+Boot the device using the twrp image
 
 ```
-fasboot boot twrp-3.2.1-0-z500m.img
+sudo fastboot boot twrp-3.2.1-0-z500m.img
 ```
