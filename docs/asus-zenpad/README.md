@@ -4,7 +4,7 @@ Instructions to install Twrp and unlock the bootloader
 
 ## Software Information
 
-* Kernel Version: 3.18.35+ androind@mcrd1-13 #1 Thu Jun 21 19:26:39 CST 2018
+* Kernel Version: 3.18.35+ android@mcrd1-13 #1 Thu Jun 21 19:26:39 CST 2018
 * Build Number: NRD90M.WW_ZenPad-14.0210.1806.33-20180621070010992_201703220333
 
 Linux Host
