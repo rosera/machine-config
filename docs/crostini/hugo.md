@@ -95,6 +95,10 @@ Build the app with the supoort
 CGO_ENABLED=1 go build --tags extended
 ```
 
+```
+sudo mv ./hugo /usr/bin/hugo
+```
+
 
 Check the version
 
