@@ -81,7 +81,16 @@ go build && mv ./hugo /usr/bin/hugo
 ```
 
 __NOTE:__ 
-To compile with Sass/SCSS support
+
+
+To compile with Sass/SCSS support requires `gcc and g++`
+
+Install libraries
+```
+sudo apt install -y gcc g++
+```
+
+Build the app with the supoort
 ```
 CGO_ENABLED=1 go build --tags extended
 ```
