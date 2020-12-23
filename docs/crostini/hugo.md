@@ -80,6 +80,13 @@ Build the application and move to /usr/bin
 go build && mv ./hugo /usr/bin/hugo
 ```
 
+__NOTE:__ 
+To compile with Sass/SCSS support
+```
+CGO_ENABLED=1 go build --tags extended
+```
+
+
 Check the version
 
 ```
