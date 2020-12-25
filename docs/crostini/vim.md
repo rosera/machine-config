@@ -53,7 +53,7 @@ ls /usr/lib/python3.7/config-3.7m-x86_64-linux-gnu
 
 6. Add the valid location to an environment variable
 ```bash
-export python_config="/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu \"
+export python_config="/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu"
 ```
 
 7. Add configuration
