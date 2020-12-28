@@ -4,7 +4,7 @@ Simple Wireframing application
 
 Install the required packages
 ```
-sudo apt install libnss3
+sudo apt install -y libnss3
 ```
 
 Go to the application site
