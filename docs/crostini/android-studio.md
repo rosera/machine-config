@@ -16,7 +16,7 @@ Android Studio is a standalone package and can be installed by performing the fo
 - [x] Right click on the downloaded file
 - [x] Select `Install app with Linux`
 
-####  SDK 
+###  SDK 
 
 Once the installation process has completed, start Android Studio and commence downloading the system components
 
@@ -31,14 +31,23 @@ the version required.
 - [ ] Android SDK: Select the SDK versions required
 
 
-#### Plugins
+### Plugins
 
 - [ ] IdeaVim - Vim emulation
 - [ ] Flutter - Develop Flutter applications (Will also install the Dart Plugin)
 - [ ] Genymotion - Virtual device for Android Studio
 
-Finally, restart Android Studio
+Restart Android Studio
 
+### Hardware
+
+- [ ] Enable developer mode on the h/w
+- [ ] In the device developer settings enable usb debugging
+- [ ] Connect the hardware device to the host
+- [ ] Confirm device - agree on both the hardware and host
+- [ ] In Manage USB devices on the host, enable access
+
+### Flutter
 
 __NOTE:__ If you intend to use Flutter 
 
