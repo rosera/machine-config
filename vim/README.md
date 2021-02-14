@@ -36,6 +36,12 @@ Finish the install for YouCompleteMe
 python3 install.py
 ```
 
+## Download the `.vimrc`
+
+```
+curl -LJO https://raw.githubusercontent.com/rosera/machine-config/master/vim/.vimrc
+```
+
 ## Plugin
 
 File uses the following plugins:
