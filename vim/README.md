@@ -2,7 +2,13 @@
 
 A quick guide to install vim based on this configuration:
 
-## vim-plug installation
+## Download and install the bash script
+
+curl -fLO  https://raw.githubusercontent.com/rosera/machine-config/master/vim/vimconfig.sh | bash -
+
+
+
+#### vim-plug installation
 
 [vim-plug](https://github.com/junegunn/vim-plug)
 
@@ -11,16 +17,26 @@ A quick guide to install vim based on this configuration:
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
+#### Backup directory
 * Create a undodir `mkdir -p ~/.vim/undodir`
+
+#### Install Vim plugins
+
 * Open Vim and enter the command:
 ```
 PlugInstall
 ```
+__NOTE:__ Ignore the errors at this stage, they are a result of the PlugIns not being installed
+
 
 ## YouCompleteMe
 
-* YouCompleteMe needs Vim with Python3 support 3.5.1+
-* YouCompleteMe - also need to run the 
+#### Requirements:
+* Vim v8.1.2269+
+* Vim with Python3 support 3.5.1+
+
+#### Installation 
 
 Install packages
 ```
@@ -34,12 +50,6 @@ cd ~/.vim/plugged/YouCompleteMe
 Finish the install for YouCompleteMe
 ```
 python3 install.py
-```
-
-## Download the `.vimrc`
-
-```
-curl -LJO https://raw.githubusercontent.com/rosera/machine-config/master/vim/.vimrc
 ```
 
 ## Plugin
