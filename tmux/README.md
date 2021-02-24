@@ -21,7 +21,13 @@ git clone https://github.com/rosera/machine-config.git
 cp ~/machine-config/tmux/.tmux*.* ~
 ```
 
-5. Start tmux
+5. Copy the tmux_script directory to the home directory
+
+ ``
+cp -r ~/machine-config/tmux/.tmux*.* ~
+```
+
+6. Start tmux
 ```
 tmux
 ```
