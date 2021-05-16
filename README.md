@@ -5,20 +5,24 @@ ChromeOS
 - [x] Keep
 - [x] Mado
 - [ ] Connection Forwarder
-- [x] Polarr Photo Editor
+- [x] [Polarr Photo Editor](https://photoeditor.polarr.co/)
 - [ ] Pixlr Photo Editor
+- [x] [Pixlr Remove Background](https://pixlr.com/remove-background/)
 - [ ] Postman
 
 Linux Apps
 - [x] Docker
-- [ ]  Inkscape
+- [ ] Inkscape
 - [x] Tmux
-- [x] Vim
-- [x] Node
-- [x] pass
+- [x] [Vim](https://richrose.dev/posts/linux/vim/vim-compile/)
+- [x] [Node](https://richrose.dev/posts/dev/node/node-install/)
+- [x] [pass](https://richrose.dev/posts/linux/pass/pass-install/)
+- [x] [OhMyBash](https://richrose.dev/posts/linux/oh-my-bash/ohmybash-install/)
 - [x] gpg
 - [ ] ytdl
 - [ ] jq
+- [x] [pdftk](https://richrose.dev/posts/linux/pdftk/pdftk-watermark/)
+- [x] [X2Go](https://richrose.dev/posts/linux/x2go/x2go-install/) 
 
 
 ## OH MY BASH
