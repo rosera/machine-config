@@ -1,5 +1,6 @@
 # Set up TMUX
 
+Reference Rich Rose Blog Post: [Setting up Tmux](https://richrose.dev/posts/linux/tmux/tmux-setup/)
 
 ## TMUX Installation
 1. Install tmux
@@ -18,10 +19,6 @@ usage: tmux [-2CluvV] [-c shell-command] [-f file] [-L socket-name]
             [-S socket-path] [command [flags]]
 ```
 
-## TMUX Execution
-
-
-
 ## TMUX configuration
 1. Move to the root/home directory
 ```
@@ -36,16 +33,17 @@ git clone https://github.com/rosera/machine-config.git
 4. Copy the tmux configuration files to the home directory
 
 ```
-cp ~/machine-config/tmux/.tmux*.* ~
+cp -r ~/machine-config/tmux/.tmux* ~
 ```
 
-5. Copy the tmux_script directory to the home directory
+## TMUX Execution
 
- ``
-cp -r ~/machine-config/tmux/.tmux*.* ~
-```
 
-6. Start tmux
+1. Start tmux
 ```
 tmux
 ```
+
+The status line will look like the image below:
+![tmux statusline](https://github.com/rosera/machine-config/blob/master/images/tmux-statusbar.png "Tmux statusbar")
+
