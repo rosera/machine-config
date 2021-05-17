@@ -1,6 +1,7 @@
 # Installation Guide
 
-A quick guide to install vim based on this configuration:
+Reference Rich Rose Blog Post: [Setting up Vim](https://richrose.dev/posts/linux/vim/vim-setup/)
+
 
 ## Download and install the bash script
 
