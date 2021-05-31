@@ -1,57 +1,14 @@
 # Installation Guide
 
-Reference Rich Rose Blog Post: [Setting up Vim](https://richrose.dev/posts/linux/vim/vim-setup/)
+A guide on setting up Vim on Linux.
+The reference is based on the blog post on [richrose.dev](https://richrose.dev/posts/linux/vim/vim-setup/)
 
+## Completed
 
-## Download and install the bash script
+The vim config should look similar to image displayed below:
 
-curl -fLO  https://raw.githubusercontent.com/rosera/machine-config/master/vim/vimconfig.sh | bash -
+![vim interface](https://github.com/rosera/machine-config/blob/master/images/vim-interface.png "Vim config")
 
-
-
-#### vim-plug installation
-
-[vim-plug](https://github.com/junegunn/vim-plug)
-
-* Run curl command to install vim-plug
-```
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-#### Backup directory
-* Create a undodir `mkdir -p ~/.vim/undodir`
-
-#### Install Vim plugins
-
-* Open Vim and enter the command:
-```
-PlugInstall
-```
-__NOTE:__ Ignore the errors at this stage, they are a result of the PlugIns not being installed
-
-
-## YouCompleteMe
-
-#### Requirements:
-* Vim v8.1.2269+
-* Vim with Python3 support 3.5.1+
-
-#### Installation 
-
-Install packages
-```
-sudo apt install cmake
-```
-
-Move to the YouCompleteMe directory
-```
-cd ~/.vim/plugged/YouCompleteMe
-```
-Finish the install for YouCompleteMe
-```
-python3 install.py
-```
 
 ## Plugin
 
@@ -80,12 +37,3 @@ File uses the following plugins:
 * Plugin 'tpope/vim-rails'
 * Plugin 'fatih/vim-go'
 * Plugin 'pangloss/vim-javascript'
-
-
-## Completed
-
-The vim config should look similar to image displayed below:
-
-![vim interface](https://github.com/rosera/machine-config/blob/master/images/vim-interface.png "Vim config")
-
-
