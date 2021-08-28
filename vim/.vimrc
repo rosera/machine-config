@@ -46,6 +46,14 @@ call plug#end()
 colorscheme gruvbox
 set background=dark
 
+" https://stackoverflow.com/questions/6053301/easier-way-to-navigate-between-vim-split-panes
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
+" Set initial setup
 let g:netrw_browse_split=2
 let g:netrw_banner=0
 let g:netrw_winsize=20
