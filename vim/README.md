@@ -7,7 +7,7 @@ The reference is based on the blog post on [richrose.dev](https://richrose.dev/p
 
 The vim config should look similar to image displayed below:
 
-![vim interface](https://github.com/rosera/machine-config/blob/master/images/vim-interface.png "Vim config")
+![vim interface](https://github.com/rosera/machine-config/blob/main/images/vim-interface.png "Vim config")
 
 
 ## Plugin
