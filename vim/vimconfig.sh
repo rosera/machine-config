@@ -1,7 +1,9 @@
 #!/bin/sh
 
 if [ ! -f "$HOME/.vim/autoload/plug.vim" ]; then
-  # vim-plug installation
+  # Create the directory
+  mkdir -p $HOME/.vim/autoload
+  # vim-plug install
   curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/main/plug.vim
 fi
