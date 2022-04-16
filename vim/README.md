@@ -10,6 +10,11 @@ The vim config should look similar to image displayed below:
 ![vim interface](https://github.com/rosera/machine-config/blob/main/images/vim-interface.png "Vim config")
 
 
+## Bash Installation 
+```bash
+curl -L https://raw.githubusercontent.com/rosera/machine-config/main/vim/install.sh | bash
+```
+
 ## Plugin
 
 File uses the following plugins:
