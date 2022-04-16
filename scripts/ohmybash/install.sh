@@ -17,7 +17,7 @@ fi
 
 # Install OhMyBash 
 if [ ! -d "$HOME/.oh-my-bash" ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+  curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh | bash
 fi
 
 # Install theme - Agnoster
