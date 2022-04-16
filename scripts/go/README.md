@@ -1,5 +1,12 @@
-## Post Go Installation
+# Go Installation
 
+
+## Bash Installation
+```bash
+curl -L https://raw.githubusercontent.com/rosera/machine-config/main/scripts/go/install.sh | bash
+```
+
+## Post Installation
 1. Edit .bashrc setting and add the installation directory to the path
 ```bash
 vi ~/.bashrc
