@@ -1,4 +1,4 @@
-# OhMyBash
+# OhMyBash Installation
 
 ## Bash Installation
 ```bash
