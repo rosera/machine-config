@@ -1,11 +1,14 @@
 #!/bin/sh
 
-if [ ! -f "$HOME/.vim/autoload/plug.vim" ]; then
+if [ ! -d "$HOME/.vim/autoload" ]; then
   # Create the directory
   mkdir -p $HOME/.vim/autoload
+fi 
+
+if [ ! -f "$HOME/.vim/autoload/plug.vim" ]; then
   # vim-plug install
   curl -fLo $HOME/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/main/plug.vim
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
 if [ ! -d "$HOME/.vim/undodir" ]; then
