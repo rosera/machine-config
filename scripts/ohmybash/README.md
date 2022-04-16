@@ -1,5 +1,12 @@
 # OhMyBash
 
+## Bash Installation
+```bash
+curl -L https://raw.githubusercontent.com/rosera/machine-config/main/vim/install.sh | bash
+```
+
+## Post Installation
+
 1. Edit `$HOME/.bashrc` configuration file
 2. Amend the theme to use Agnoster
 ```bash
