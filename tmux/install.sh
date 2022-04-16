@@ -4,9 +4,9 @@ FILE_DIR="/usr/bin/tmux"
 SCRIPT_DIR="$HOME/.tmux_script"
 
 LOCAL_CONF="$HOME/.tmux.conf"
-REMOTE_CONF="https://raw.githubusercontent.com/rosera/machine-config/master/tmux/.tmux.conf"
+REMOTE_CONF="https://raw.githubusercontent.com/rosera/machine-config/main/tmux/.tmux.conf"
 
-SCRIPT_PATH="https://raw.githubusercontent.com/rosera/machine-config/master/tmux/.tmux_script"
+SCRIPT_PATH="https://raw.githubusercontent.com/rosera/machine-config/main/tmux/.tmux_script"
 
 SCRIPT_DOCKER="docker.sh"
 SCRIPT_HW="hardware.sh"
