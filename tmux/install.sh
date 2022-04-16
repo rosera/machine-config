@@ -25,32 +25,32 @@ if [ ! -d "$SCRIPT_DIR" ]; then
   mkdir -p "$SCRIPT_DIR"
 fi
 
-# Install TMUX configuration
-if [ ! -f "$LOCAL_CONF" ]; then
-  curl -L "$REMOTE_CONF" -o "$LOCAL_CONF"
-fi
-
 # Install TMUX SCRIPT - DOCKER
 if [ ! -f "$SCRIPT_DIR/$SCRIPT_DOCKER" ]; then
   curl -L "$SCRIPT_PATH/$SCRIPT_DOCKER" -o "$SCRIPT_DIR/$SCRIPT_DOCKER"
+  chmod +x "$SCRIPT_DIR/$SCRIPT_DOCKER"
 fi
 
-# Install TMUX SCRIPT - HW 
+# Install TMUX SCRIPT - HW
 if [ ! -f "$SCRIPT_DIR/$SCRIPT_HW" ]; then
   curl -L "$SCRIPT_PATH/$SCRIPT_HW" -o "$SCRIPT_DIR/$SCRIPT_HW"
+  chmod +x "$SCRIPT_DIR/$SCRIPT_HW"
 fi
 
-# Install TMUX SCRIPT - NET 
+# Install TMUX SCRIPT - NET
 if [ ! -f "$SCRIPT_DIR/$SCRIPT_NET" ]; then
   curl -L "$SCRIPT_PATH/$SCRIPT_NET" -o "$SCRIPT_DIR/$SCRIPT_NET"
+  chmod +x "$SCRIPT_DIR/$SCRIPT_NET"
 fi
 
-# Install TMUX SCRIPT - UPTIME 
+# Install TMUX SCRIPT - UPTIME
 if [ ! -f "$SCRIPT_DIR/$SCRIPT_UPTIME" ]; then
   curl -L "$SCRIPT_PATH/$SCRIPT_UPTIME" -o "$SCRIPT_DIR/$SCRIPT_UPTIME"
+  chmod +x "$SCRIPT_DIR/$SCRIPT_UPTIME"
 fi
 
-# Install TMUX SCRIPT - IP 
+# Install TMUX SCRIPT - IP
 if [ ! -f "$SCRIPT_DIR/$SCRIPT_IP" ]; then
   curl -L "$SCRIPT_PATH/$SCRIPT_IP" -o "$SCRIPT_DIR/$SCRIPT_IP"
+  chmod +x "$SCRIPT_DIR/$SCRIPT_IP"
 fi
