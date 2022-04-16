@@ -8,7 +8,7 @@ Once completed, the status line will look like the image below:
 
 ## Bash Installation 
 ```bash
-curl -L https://raw.githubusercontent.com/rosera/machine-config/rosera-patch-1/tmux/install.sh | bash
+curl -L https://raw.githubusercontent.com/rosera/machine-config/master/tmux/install.sh | bash
 ```
 
 ## General Installation
