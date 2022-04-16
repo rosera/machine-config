@@ -25,6 +25,11 @@ if [ ! -d "$SCRIPT_DIR" ]; then
   mkdir -p "$SCRIPT_DIR"
 fi
 
+# Install TMUX configuration
+if [ ! -f "$LOCAL_CONF" ]; then
+  curl -L "$REMOTE_CONF" -o "$LOCAL_CONF"
+fi
+
 # Install TMUX SCRIPT - DOCKER
 if [ ! -f "$SCRIPT_DIR/$SCRIPT_DOCKER" ]; then
   curl -L "$SCRIPT_PATH/$SCRIPT_DOCKER" -o "$SCRIPT_DIR/$SCRIPT_DOCKER"
