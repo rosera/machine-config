@@ -2,7 +2,7 @@
 
 ## Bash Installation
 ```bash
-curl -L https://raw.githubusercontent.com/rosera/machine-config/main/vim/install.sh | bash
+curl -L https://raw.githubusercontent.com/rosera/machine-config/main/scripts/ohmybash/install.sh | bash
 ```
 
 ## Post Installation
