@@ -9,10 +9,41 @@ The vim config should look similar to image displayed below:
 
 ![vim interface](https://github.com/rosera/machine-config/blob/main/images/vim-interface.png "Vim config")
 
+__NOTE:__ The following assumes the required development languages are already installed on the host machine
 
 ## Bash Installation 
 ```bash
 curl -L https://raw.githubusercontent.com/rosera/machine-config/main/vim/install.sh | bash
+```
+
+## VIM Configuration
+```bash
+curl -L https://raw.githubusercontent.com/rosera/machine-config/main/vim/vimconfig.sh | bash
+```
+
+## VIM Plugin
+
+1. Load Vim
+2. Run the PlugInstall command
+```bash
+:PlugInstall
+```
+3. Exit VIM
+
+## YouCompleteMe Install
+1. Change director to `.vim/
+```bash
+cd $HOME/.vim/plugged/YouCompleteMe
+```
+
+2. Install `CMAKE`
+```bash
+sudo apt install -y cmake
+```
+
+3. Run `YouCompleteMe` installer
+```bash
+python3 install.py --all
 ```
 
 ## Plugin
