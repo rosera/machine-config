@@ -32,10 +32,7 @@ fi
 # Configure Python3
 if [ -d "$HOME/vim" ]; then
   # Change directory
-  cd $HOME/vim
-  
-  # Configure VIM with Python3
-  ./configure --with-features=huge \
+  (cd $HOME/vim;./configure --with-features=huge \
     --enable-multibyte \
     --enable-rubyinterp=yes \
     --enable-python3interp=yes \
@@ -44,8 +41,8 @@ if [ -d "$HOME/vim" ]; then
     --enable-perlinterp=yes \
     --enable-gui=gtk2 \
     --enable-cscope \
-    --prefix=/usr/local
+    --prefix=/usr/local)
 
   # Make VIM + Install
-  make && sudo make install
+  (cd $HOME/vim;make && sudo make install)
 fi
