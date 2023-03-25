@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILE_DIR="/usr/bin/tmux"
+FILE_DIR=$(which tmux)
 SCRIPT_DIR="$HOME/.tmux_script"
 
 LOCAL_CONF="$HOME/.tmux.conf"
