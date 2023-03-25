@@ -1,12 +1,13 @@
 #!/bin/sh
 
 FILE_DIR=$(which tmux)
-SCRIPT_DIR="$HOME/.tmux_script"
+SCRIPT_FOLDER=".tmux_scripts"
+SCRIPT_DIR="$HOME/$SCRIPT_FOLDER"
 
 LOCAL_CONF="$HOME/.tmux.conf"
 REMOTE_CONF="https://raw.githubusercontent.com/rosera/machine-config/main/tmux/.tmux.conf"
 
-SCRIPT_PATH="https://raw.githubusercontent.com/rosera/machine-config/main/tmux/.tmux_script"
+SCRIPT_PATH="https://raw.githubusercontent.com/rosera/machine-config/main/tmux/$SCRIPT_FOLDER"
 
 SCRIPT_DOCKER="docker.sh"
 SCRIPT_HW="hardware.sh"
