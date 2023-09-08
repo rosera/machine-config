@@ -116,22 +116,33 @@ clip2() {
 3. Add the following code as a new clip function
 ```
 clip() {
-        # Ref: https://medium.com/free-code-camp/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b
-        set -eu
-        # get data either from stdin or from file
-        buf=$(echo "$1")
-        # Get buffer length
-        buflen=$( printf %s "$buf" | wc -c )
-        maxlen=74994
-        # warn if exceeds maxlen
-        if [ "$buflen" -gt "$maxlen" ]; then
-          printf "input is %d bytes too long" "$(( buflen - maxlen ))" >&2 
-        fi  
+  # input=$( cat "$@" )
+  input=$( echo "$1" )
+  input() { printf %s "$input" ;}
+  known() { command -v "$1" >/dev/null ;}
+  maybe() { known "$1" && input | "$@" ;}
+  alive() { known "$1" && "$@" >/dev/null 2>&1 ;}
+  
+  # copy to tmux
+  test -n "$TMUX" && maybe tmux load-buffer -
+  
+  # copy via X11
+  test -n "$DISPLAY" && alive xhost && {
+          maybe xsel -i -b || maybe xclip -sel c
+  }
 
-        # Ref: https://github.com/kovidgoyal/kitty/issues/995
-        # Remove contents of the buffer and add selection
-        # build up OSC 52 ANSI escape sequence
-        printf "\033]52;c;$(printf $buf "" | base64)\a"
+  # copy via OSC 52
+  printf_escape() {
+    esc=$1
+    # test -n "$TMUX" -o -z "${TERM##screen*}" && esc="\033Ptmux;\033$esc\033\\"
+    test -n "$TMUX" -o -z "${TERM##screen*}" && esc="\033P;\033$esc\033\\"
+    printf "$esc"
+  }
+
+  len=$( input | wc -c ) 
+  max=74994
+  test $len -gt $max && echo "$0: input is $(( len - max )) bytes too long" >&2
+  printf_escape "\033]52;c;$( input | head -c $max | base64 | tr -d '\r\n' )\a"
 }
 ```
 
