@@ -55,14 +55,18 @@ ls /usr/lib/python3.7/config-3.7m-x86_64-linux-gnu
 ```bash
 export python_config="/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu"
 ```
+7. Add the python version - make sure it matches the above version!
+```bash
+export python_version="python3.7"
+```
 
-7. Add configuration
+8. Add configuration
 ```bash
 ./configure --with-features=huge \
-  --enable-multibyte \
+  --enable-multibyte \    
   --enable-rubyinterp=yes \
   --enable-python3interp=yes \
-  --with-python3-command=python3.7 \
+  --with-python3-command=$python_version \
   --with-python3-config-dir=$python_config \
   --enable-perlinterp=yes \
   --enable-gui=gtk2 \
@@ -72,18 +76,18 @@ export python_config="/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu"
 
 __NOTE:__ Make sure Python command points to a valid directory
 
-8. Install the build output
+9. Install the build output
 
 ```bash
 sudo make install
 ```
 
-9. Check the installation
+10. Check the installation
 ```bash
 vim --version
 ```
 
-10. Grep for the Python3 support (i.e. +Python3)
+11. Grep for the Python3 support (i.e. +Python3)
 
 ```bash
 vim --version | grep +python3
