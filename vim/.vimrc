@@ -38,12 +38,13 @@ Plug 'junegunn/goyo.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
 Plug 'preservim/nerdtree'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'mbbill/undotree'
 
 call plug#end()
 
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme industry
 set background=dark
 
 " https://stackoverflow.com/questions/6053301/easier-way-to-navigate-between-vim-split-panes
