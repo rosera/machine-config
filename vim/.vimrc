@@ -39,12 +39,13 @@ Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
 Plug 'preservim/nerdtree'
 " Plug 'Valloric/YouCompleteMe'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'mbbill/undotree'
 
 call plug#end()
 
-" colorscheme gruvbox
-colorscheme industry
+colorscheme gruvbox
+" colorscheme industry
 set background=dark
 
 " https://stackoverflow.com/questions/6053301/easier-way-to-navigate-between-vim-split-panes
@@ -59,6 +60,12 @@ let g:netrw_browse_split=2
 let g:netrw_banner=0
 let g:netrw_winsize=20
 let g:ctrlp_use_caching=0
+
+" COC Keyboard mapping
+nmap <silent> <leader>gd <Plug>(coc-definition)
+nmap <silent> <leader>gr <Plug>(coc-references)
+inoremap <silent><expr> <c-@> coc#refresh()
+nmap <leader>rn <Plug>(coc-rename)
 
 " Open Nerdtree on the RIGHT
 let g:NERDTreeWinPos="right"
