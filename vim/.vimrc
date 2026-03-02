@@ -39,33 +39,41 @@ Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
 Plug 'preservim/nerdtree'
 " Plug 'Valloric/YouCompleteMe'
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mbbill/undotree'
 
 call plug#end()
 
 colorscheme gruvbox
-" colorscheme industry
 set background=dark
 
 " https://stackoverflow.com/questions/6053301/easier-way-to-navigate-between-vim-split-panes
 " Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+" nmap <silent> <c-k> :wincmd k<CR>
+" nmap <silent> <c-j> :wincmd j<CR>
+" nmap <silent> <c-h> :wincmd h<CR>
+" nmap <silent> <c-l> :wincmd l<CR>
 
-" Set initial setup
-let g:netrw_browse_split=2
-let g:netrw_banner=0
-let g:netrw_winsize=20
-let g:ctrlp_use_caching=0
+" Set your leader key to Ctrl-a (if you haven't already)
+let mapleader = "\<C-a>"
+
+" Use Leader + [hjkl] to select the active split
+nnoremap <silent> <leader>k :wincmd k<CR>
+nnoremap <silent> <leader>j :wincmd j<CR>
+nnoremap <silent> <leader>h :wincmd h<CR>
+nnoremap <silent> <leader>l :wincmd l<CR>
 
 " COC Keyboard mapping
 nmap <silent> <leader>gd <Plug>(coc-definition)
 nmap <silent> <leader>gr <Plug>(coc-references)
 inoremap <silent><expr> <c-@> coc#refresh()
 nmap <leader>rn <Plug>(coc-rename)
+
+" Set initial setup
+let g:netrw_browse_split=2
+let g:netrw_banner=0
+let g:netrw_winsize=20
+let g:ctrlp_use_caching=0
 
 " Open Nerdtree on the RIGHT
 let g:NERDTreeWinPos="right"
